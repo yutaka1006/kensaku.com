@@ -1,0 +1,210 @@
+//トップページ//
+header {
+    width: 100%;
+    padding: 4px 4% 4px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+   margin: 0; padding: 0;
+   font-size: 20px;
+}
+
+
+//トップページボタン
+.btn  {
+  opacity       : 0.9;  
+  transition    : .10s;        
+  box-shadow    : 8px 8px 5px #666666;
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;display: inline-block;
+  outline: none;
+  position: relative;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.btn,
+.btn::before,
+.btn::after {
+  webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn span {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  border: 2px solid #333;
+  text-align: center;
+  line-height: 56px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  pointer-events: none;
+}
+.btn span:nth-child(1) {
+  background-color: #333;
+  color: #fff;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -30px;
+  -moz-transform-origin: 50% 50% -30px;
+  transform-origin: 50% 50% -30px;
+}
+.btn span:nth-child(2) {
+  background-color: #fff;
+  color: #333;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -30px;
+  -moz-transform-origin: 50% 50% -30px;
+  transform-origin: 50% 50% -30px;
+}
+.btn:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn:hover span:nth-child(2) {
+  background-color: #333;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.header-navigation {
+  margin: 0 0 0 auto;
+}
+
+
+//トップページ背景画像　テキスト配置
+.main-visual {
+  background-image: image-url('henry-co-3coKbdfnAFg-unsplash.jpg');
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1200px 650px;
+  height: 100vh;
+}
+
+.main-title {
+  margin-top: 350px;
+  margin-bottom: 100px;
+  margin-left: 95px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 350%;
+  color: #fff;
+}
+
+p, p2 {
+  font-size: 150%;
+  color: #fff;
+}
+
+
+//新規登録ページ//
+.text-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 250%;
+  margin-left: 790px;
+}
+
+.p3 {
+  color: #000;
+  font-size: 150%;
+  margin-left: 700px;
+}
+
+.text-link {
+  margin-left: 100px;
+}
+
+.form-control {
+  height: 45px;
+}
+ 
+ .form-group {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100px;
+  padding: 50px 10px;
+  margin: 5px 550px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+
+.form-group:focus {
+  border: 1px solid #00b5ad;
+}
+
+
+//新規登録ページボタン→ログイン
+.btn2 {
+  display: inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size : 13pt;        /* 文字サイズ */
+  text-align: center;      /* 文字位置   */
+  cursor: pointer;     /* カーソル   */
+  padding: 12px 90px;   /* 余白       */
+  background: #000000;     /* 背景色     */
+  color: #ffffff;     /* 文字色     */
+  line-height: 1em;         /* 1行の高さ  */
+  opacity: 1;           /* 透明度     */
+  transition: .3s;         /* なめらか変化 */
+  box-shadow: 8px 8px 4px #666666;  /* 影の設定 */
+  margin-left: 715px;
+  margin-top: 90px;
+}
+.btn2:hover {
+  box-shadow: none;        /* カーソル時の影消去 */
+  opacity : 0.8;         /* カーソル時透明度 */
+}
+
+.text-sub2 {
+  margin-left: 650px;
+ } 
+ 
+ .container {
+   margin: 50px 0; 
+ }
+
+//ユーザーの登録のアラート
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+
