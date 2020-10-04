@@ -1,31 +1,23 @@
-<div class="sub-visual">
-  <div class="container">
-    <h1 class="text-title">新規登録</h1>
-    <%= form_for @user do |f| %>
-    <div class="form-group">
+
       <%= f.label :first_name, '性' %>
       <%= f.text_field :name, class: 'form-control' %>
-    </div>
-    <div class="form-group">
+    
       <%= f.label :last_name, '名' %>
       <%= f.text_field :name, class: 'form-control' %>
-    </div>
-    <div class="form-group">
+    
       <%= f.label :email_address, 'メールアドレス' %>
       <%= f.text_field :email, class: 'form-control' %>
-    </div>
-    <div class="form-group">
+    
       <%= f.label :password, 'パスワード （半角6文字以上で英数字1文字以上含む必要があります。） '%>
       <%= f.password_field :password, class: 'form-control' %>
-    </div>
-    <div class="form-group">
+    
       <%= f.label :password_confirmation, 'パスワード確認' %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
-    </div>
+      
     <%= f.submit '登録する', class: 'btn2' %>
-    <% end %>
     
-    <p3 class="text-sub2">すでにアカウントをお持ちですか？</p3> 
-    <%= link_to 'ログインはこちら', login_path, class: 'text-link' %>
-  </div>
-</div>
+
+
+
+<h1>Profiles#new</h1>
+<p>Find me in app/views/profiles/new.html.erb</p>

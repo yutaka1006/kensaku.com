@@ -1,0 +1,13 @@
+<div class="sub-visual">
+  <div class="container">
+    <h1 class="text-title2">パスワード再設定</h1>
+    <%= form_for :password_reset, url: password_resets_path do |f| %>
+      <div class="form-group">
+        <%= f.label :email_address, 'メールアドレス' %>
+        <%= f.text_field :email, class: 'form-control' %>
+      </div>
+      <%= f.submit '送信する', class: 'btn2' %>
+    <% end %>
+  </div>
+</div>
+
